@@ -17,3 +17,8 @@ result.subscribe(x => console.log(x));
 // 20
 // 30
 ```
+
+## References
+
+https://www.learnrxjs.io/learn-rxjs/operators/creation/from
+https://rxjs.dev/api/index/function/from
