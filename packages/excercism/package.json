@@ -3,6 +3,7 @@
   "scripts": {
     "test": "jest"
   },
+  "version": "1.0.0",
   "devDependencies": {
     "@babel/core": "^7.14.0",
     "@babel/preset-env": "^7.14.0",
