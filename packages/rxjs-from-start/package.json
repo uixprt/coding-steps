@@ -1,0 +1,14 @@
+{
+  "name": "rxjs-from-start",
+  "description": "An exploration into rxjs building from scratch",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.0",
+    "@babel/preset-env": "^7.14.0",
+    "@babel/preset-typescript": "^7.13.0",
+    "babel-jest": "^26.6.3",
+    "jest": "^26.6.3"
+  }
+}
