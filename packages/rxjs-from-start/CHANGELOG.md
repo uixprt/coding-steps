@@ -1,6 +1,6 @@
 # rxjs-from-start
 
-## null
+## 1.0.0
 ### Patch Changes
 
 - fb49065: Add creator from-array
