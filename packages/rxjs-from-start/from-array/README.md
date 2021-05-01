@@ -4,7 +4,7 @@ Create an observable that emit values provided by the array argument.
 
 ## Example
 
-```
+```js
 import { fromArray } from './from-array';
 
 const array = [10, 20, 30];
