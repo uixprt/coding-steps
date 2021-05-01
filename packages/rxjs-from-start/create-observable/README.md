@@ -8,7 +8,7 @@ The observable provide a 'subscribe' method to register a listener for its data.
 
 When a subscriber register it self to the observable, the observable start giving it it's data.
 
-```
+```js
 const numberObservable$ = createNumberObservable();
 
 numberObservable$.subscribe(function next(data) {
@@ -24,7 +24,7 @@ The subscriber to the observable must provide `next`, `error`, and `complete` me
 2. Or notify the subscriber that an error occured - the `error` method.
 3. Or that all the data was provided and no more data left - the `complete` method.
 
-```
+```js
 const numberObservable$ = createNumberObservable();
 
 numberObservable$.subscribe(
