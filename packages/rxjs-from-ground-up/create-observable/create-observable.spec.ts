@@ -1,5 +1,5 @@
-// import { createObservable } from "./create-observable.solution-example";
-import { createObservable } from "./create-observable";
+import { createObservable } from "./create-observable.solution-example";
+// import { createObservable } from "./create-observable";
 
 describe("createObservable", () => {
   xtest("Get results on subscribing", (done) => {
@@ -66,10 +66,9 @@ describe("createObservable", () => {
       const timeoutMs = 0;
       const max = 10;
       let intervalIndex = 0;
-      let isSubscribed = true;
 
       const generator = () => {
-        if (!isSubscribed) {
+        if (subscriber.closed) {
           subscriber.complete();
           return;
         }
@@ -88,11 +87,7 @@ describe("createObservable", () => {
 
       generator();
 
-      return {
-        unsubscribe: () => {
-          isSubscribed = false;
-        },
-      }
+      return () => {};
     });
 
     let results = [];

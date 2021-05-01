@@ -4,11 +4,19 @@ export function createObservable(onSubscribe) {
       const subscriber = {
         next,
         error,
-        complete
+        complete,
+        closed: false,
       };
 
-      return onSubscribe(subscriber);
-    }
+      const cleanupFn = onSubscribe(subscriber) || (() => {});
+
+      return {
+        unsubscribe: () => {
+          subscriber.closed = true;
+          cleanupFn();
+        },
+      };
+    },
   };
 
   return observable;

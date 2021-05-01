@@ -1,5 +1,7 @@
 # Rxjs From the Ground Up
 
+A learning project to get familiar with reactive architecture. Reverse engineering rxjs interfaces to understand how the building blocks works.
+
 ## Usage
 
 1. Install dependencies with yarn. It does not matter in which directory of the project.
