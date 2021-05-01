@@ -2,7 +2,8 @@
   "name": "rxjs-from-start",
   "description": "An exploration into rxjs building from scratch",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "devDependencies": {
     "@babel/core": "^7.14.0",

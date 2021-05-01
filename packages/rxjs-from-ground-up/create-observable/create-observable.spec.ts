@@ -1,7 +1,7 @@
 import { createObservable } from "./create-observable";
 
 describe("createObservable", () => {
-  test.skip("Get results on subscribing", (done) => {
+  xtest("Get results on subscribing", (done) => {
     const numbers$ = createObservable((subscriber) => {
       for (let i = 0; i < 10; i += 1) {
         subscriber.next(i);
@@ -25,7 +25,7 @@ describe("createObservable", () => {
     );
   });
 
-  test.skip("Get error notification when observable emit error", (done) => {
+  xtest("Get error notification when observable emit error", (done) => {
     const computation$ = createObservable((subscriber) => {
       try {
         const computationResult = {}.nonExistingMethod();
@@ -45,7 +45,7 @@ describe("createObservable", () => {
     );
   });
 
-  test.skip("Get complete notification when observable emit complete", (done) => {
+  xtest("Get complete notification when observable emit complete", (done) => {
     const computation$ = createObservable((subscriber) => {
       subscriber.next(1234);
       subscriber.complete();

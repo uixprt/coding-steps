@@ -28,7 +28,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       },
       {
         "name": "rxjs-from-start",
-        "reference": "workspace:packages/rxjs-from-start"
+        "reference": "workspace:packages/rxjs-from-ground-up"
       }
     ],
     "enableTopLevelFallback": true,
@@ -36,7 +36,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
     "fallbackExclusionList": [
       ["coding-exercises", ["workspace:."]],
       ["excercism", ["workspace:packages/excercism"]],
-      ["rxjs-from-start", ["workspace:packages/rxjs-from-start"]]
+      ["rxjs-from-start", ["workspace:packages/rxjs-from-ground-up"]]
     ],
     "fallbackPool": [
     ],
@@ -8189,10 +8189,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["rxjs-from-start", [
-        ["workspace:packages/rxjs-from-start", {
-          "packageLocation": "./packages/rxjs-from-start/",
+        ["workspace:packages/rxjs-from-ground-up", {
+          "packageLocation": "./packages/rxjs-from-ground-up/",
           "packageDependencies": [
-            ["rxjs-from-start", "workspace:packages/rxjs-from-start"],
+            ["rxjs-from-start", "workspace:packages/rxjs-from-ground-up"],
             ["@babel/core", "npm:7.14.0"],
             ["@babel/preset-env", "virtual:11403ca8c6439b9c270b33fe137b5c8cf9415899c4ef245e2bddfbe93b3c03e25371702e545869af8b1d214990cc20e5dc16d302a4bfd554ec3f757f51f76b51#npm:7.14.0"],
             ["@babel/preset-typescript", "virtual:11403ca8c6439b9c270b33fe137b5c8cf9415899c4ef245e2bddfbe93b3c03e25371702e545869af8b1d214990cc20e5dc16d302a4bfd554ec3f757f51f76b51#npm:7.13.0"],

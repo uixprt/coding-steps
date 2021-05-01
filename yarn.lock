@@ -6386,9 +6386,9 @@ fsevents@^2.1.2:
   languageName: node
   linkType: hard
 
-"rxjs-from-start@workspace:packages/rxjs-from-start":
+"rxjs-from-start@workspace:packages/rxjs-from-ground-up":
   version: 0.0.0-use.local
-  resolution: "rxjs-from-start@workspace:packages/rxjs-from-start"
+  resolution: "rxjs-from-start@workspace:packages/rxjs-from-ground-up"
   dependencies:
     "@babel/core": ^7.14.0
     "@babel/preset-env": ^7.14.0

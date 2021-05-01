@@ -1,5 +1,25 @@
 # Rxjs From the Ground Up
 
+## Usage
+
+1. Install dependencies with yarn. It does not matter in which directory of the project.
+
+```bash
+yarn install
+```
+
+2. Enter the folder of the package and run the test.
+
+```bash
+yarn test
+```
+
+The tests can be run in `watch` mode.
+
+```bash
+yarn test:watch
+```
+
 ## Order of Excercises
 
 Creation

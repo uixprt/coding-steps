@@ -2,6 +2,26 @@
 
 A unified monorepo for logic problems in javascript/typescript exercises. This repo does not replace the original sites but design to make it easier to get the exercises and setup of them. Please visit the original sites.
 
+## General Usage
+
+1. Install dependencies with yarn. It does not matter in which directory of the project.
+
+```bash
+yarn install
+```
+
+2. Enter the folder of the package and run the test.
+
+```bash
+yarn test
+```
+
+The tests can be run in `watch` mode.
+
+```bash
+yarn test:watch
+```
+
 ## Attributions
 
 Those exercises are taken from several excelent places under several licenses. 
