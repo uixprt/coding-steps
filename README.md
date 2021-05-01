@@ -42,6 +42,13 @@ Those exercises are taken from several excelent places under several licenses.
 * site - https://projecteuler.net
 * license - https://projecteuler.net/copyright
 
+### Learn Rxjs
+
+> Clear examples, explanations, and resources for RxJS.
+
+* site - https://www.learnrxjs.io/
+* license - https://github.com/btroncone/learn-rxjs/blob/master/LICENSE
+
 ## Tools Used 
 
 ### Yarn
