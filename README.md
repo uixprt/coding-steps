@@ -6,7 +6,7 @@ A unified monorepo for logic problems in javascript/typescript exercises. This r
 
 Those exercises are taken from several excelent places under several licenses. 
 
-### Exercises
+### Exercism
 
 > Code practice and mentorship for everyone Level up your programming skills with 3,450 exercises across 52 languages, and insightful discussion with our dedicated team of welcoming mentors. Exercism is 100% free forever.
 
