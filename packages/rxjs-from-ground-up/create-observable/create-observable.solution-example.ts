@@ -7,7 +7,7 @@ export function createObservable(onSubscribe) {
         complete
       };
 
-      onSubscribe(subscriber);
+      return onSubscribe(subscriber);
     }
   };
 

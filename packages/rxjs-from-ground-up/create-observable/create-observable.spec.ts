@@ -1,3 +1,4 @@
+// import { createObservable } from "./create-observable.solution-example";
 import { createObservable } from "./create-observable";
 
 describe("createObservable", () => {
@@ -55,6 +56,65 @@ describe("createObservable", () => {
       function next(val) {},
       function error(err) {},
       function complete() {
+        done();
+      }
+    );
+  });
+
+  xtest("Stop receiving emittion after unsubcribing", (done) => {
+    const numbersAsync$ = createObservable((subscriber) => {
+      const timeoutMs = 0;
+      const max = 10;
+      let intervalIndex = 0;
+      let isSubscribed = true;
+
+      const generator = () => {
+        if (!isSubscribed) {
+          subscriber.complete();
+          return;
+        }
+
+        setTimeout(() => {
+          if (intervalIndex >= max) {
+            subscriber.complete();
+          }
+
+          subscriber.next(intervalIndex);
+          intervalIndex += 1;
+
+          generator();
+        }, timeoutMs);
+      };
+
+      generator();
+
+      return {
+        unsubscribe: () => {
+          isSubscribed = false;
+        },
+      }
+    });
+
+    let results = [];
+
+    const subscription = numbersAsync$.subscribe(
+      function next(val) {
+        if (val === 3) {
+          subscription.unsubscribe();
+          return
+        }
+
+        if (val > 3) {
+          throw new Error('Was expected to not recive values after unsubscribe');
+        }
+
+        results = [...results, val];
+      },
+      function error(err) {
+        throw err;
+      },
+      function complete() {
+        expect(results).toEqual([0, 1, 2]);
         done();
       }
     );
