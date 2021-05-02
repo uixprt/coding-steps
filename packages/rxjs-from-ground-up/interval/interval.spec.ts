@@ -1,8 +1,8 @@
-import {interval} from './interval.solution-example';
-// import {interval} from './interval';
+// import {interval} from './interval.solution-example';
+import {interval} from './interval';
 
 describe('interval', () => {
-  test('emit sequential numbers in interval', (done) => {
+  xtest('emit sequential numbers in interval', (done) => {
     const numbers$ = interval(200);
     
     let results = [];
