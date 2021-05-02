@@ -30,6 +30,8 @@ Creation
 2. of
 3. from-array
 4. from-promise
+5. from
+6. interval
 
 ## Resources
 
