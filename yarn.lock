@@ -1775,6 +1775,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@proftit/rxjs-from-the-group-up@workspace:packages/rxjs-from-the-group-up":
+  version: 0.0.0-use.local
+  resolution: "@proftit/rxjs-from-the-group-up@workspace:packages/rxjs-from-the-group-up"
+  dependencies:
+    "@babel/core": ^7.14.0
+    "@babel/preset-env": ^7.14.0
+    "@babel/preset-typescript": ^7.13.0
+    "@rollup/plugin-typescript": ^8.2.1
+    babel-jest: ^26.6.3
+    jest: ^26.6.3
+    rollup: ^2.47.0
+    tslib: ^2.2.0
+    typescript: ^4.2.4
+  languageName: unknown
+  linkType: soft
+
 "@rollup/plugin-typescript@npm:^8.2.1":
   version: 8.2.1
   resolution: "@rollup/plugin-typescript@npm:8.2.1"
@@ -6440,22 +6456,6 @@ __metadata:
   checksum: 3d12f0251ad043ed52689523b1e5fa5b7e5395a6ae0d2cbfb880a3009bb297de6d7e96ba4ad5a818e2722b42cea78a5ee6842d6d864736a7ca755ec119ed097c
   languageName: node
   linkType: hard
-
-"rxjs-from-start@workspace:packages/rxjs-from-ground-up":
-  version: 0.0.0-use.local
-  resolution: "rxjs-from-start@workspace:packages/rxjs-from-ground-up"
-  dependencies:
-    "@babel/core": ^7.14.0
-    "@babel/preset-env": ^7.14.0
-    "@babel/preset-typescript": ^7.13.0
-    "@rollup/plugin-typescript": ^8.2.1
-    babel-jest: ^26.6.3
-    jest: ^26.6.3
-    rollup: ^2.47.0
-    tslib: ^2.2.0
-    typescript: ^4.2.4
-  languageName: unknown
-  linkType: soft
 
 "safe-buffer@npm:^5.0.1, safe-buffer@npm:^5.1.2":
   version: 5.2.1
