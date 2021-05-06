@@ -1,4 +1,4 @@
-# Coding Exercises
+# Coding Steps
 
 A unified monorepo for logic problems in javascript/typescript exercises. This repo does not replace the original sites but design to make it easier to get the exercises and setup of them. Please visit the original sites.
 
