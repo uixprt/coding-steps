@@ -1,3 +1,9 @@
+---
+title: hello world
+description: Hello world
+origin: https://github.com/exercism/typescript/tree/main/exercises/practice/hello-world
+license: https://github.com/exercism/typescript/blob/main/LICENSE
+---
 The classical introductory exercise. Just say "Hello, World!".
 
 "Hello, World!" is the traditional first program for beginning programming in a new language or environment.

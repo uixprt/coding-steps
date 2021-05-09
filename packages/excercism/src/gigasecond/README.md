@@ -1,3 +1,10 @@
+---
+title: Gigasecond
+description: Gigasecond
+origin: https://github.com/exercism/typescript/tree/main/exercises/practice/gigasecond
+license: https://github.com/exercism/typescript/blob/main/LICENSE
+---
+
 # Gigasecond
 
 Given a moment, determine the moment that would be after a gigasecond

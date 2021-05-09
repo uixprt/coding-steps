@@ -1779,16 +1779,42 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@proftit/coding-steps-website@workspace:packages/coding-steps-website"
   dependencies:
+    "@proftit/exercism": ^1.0.0
     "@rollup/plugin-commonjs": ^18.1.0
     "@rollup/plugin-html": ^0.2.3
     "@rollup/plugin-node-resolve": ^13.0.0
     "@rollup/plugin-replace": ^2.4.2
     "@rollup/plugin-sucrase": ^3.1.0
+    "@rollup/plugin-typescript": ^8.2.1
+    front-matter: ^4.0.2
     react: ^17.0.2
     react-dom: ^17.0.2
     rollup: ^2.47.0
     rollup-plugin-livereload: ^2.0.0
     rollup-plugin-serve: ^1.1.0
+    tslib: ^2.2.0
+    typescript: ^4.2.4
+  languageName: unknown
+  linkType: soft
+
+"@proftit/exercism@^1.0.0, @proftit/exercism@workspace:packages/excercism":
+  version: 0.0.0-use.local
+  resolution: "@proftit/exercism@workspace:packages/excercism"
+  dependencies:
+    "@babel/core": ^7.14.0
+    "@babel/preset-env": ^7.14.0
+    "@babel/preset-typescript": ^7.13.0
+    "@rollup/plugin-commonjs": ^18.1.0
+    "@rollup/plugin-html": ^0.2.3
+    "@rollup/plugin-node-resolve": ^13.0.0
+    "@rollup/plugin-replace": ^2.4.2
+    "@rollup/plugin-sucrase": ^3.1.0
+    babel-jest: ^26.6.3
+    front-matter: ^4.0.2
+    jest: ^26.6.3
+    marked: ^2.0.3
+    rollup: ^2.47.0
+    rollup-plugin-string: ^3.0.0
   languageName: unknown
   linkType: soft
 
@@ -3502,6 +3528,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"estree-walker@npm:^0.6.1":
+  version: 0.6.1
+  resolution: "estree-walker@npm:0.6.1"
+  checksum: a63b94b841fcda2d79ff8e313b4ea8439b3364094ba66547289814bd7da4399a54cd33849b23504d239266430f219a142627071201a9fb6eb488bd025575f8fc
+  languageName: node
+  linkType: hard
+
 "estree-walker@npm:^1.0.1":
   version: 1.0.1
   resolution: "estree-walker@npm:1.0.1"
@@ -3522,18 +3555,6 @@ __metadata:
   checksum: 590b04533177f8f6f0f352b3ac7da6c1c1e3d8375d8973972fba9c94558ca168685fd38319c3c6f4c37ba256df7494a7f15d8e761df1655af8a8f0027d988f8f
   languageName: node
   linkType: hard
-
-"excercism@workspace:packages/excercism":
-  version: 0.0.0-use.local
-  resolution: "excercism@workspace:packages/excercism"
-  dependencies:
-    "@babel/core": ^7.14.0
-    "@babel/preset-env": ^7.14.0
-    "@babel/preset-typescript": ^7.13.0
-    babel-jest: ^26.6.3
-    jest: ^26.6.3
-  languageName: unknown
-  linkType: soft
 
 "exec-sh@npm:^0.3.2":
   version: 0.3.6
@@ -3834,6 +3855,15 @@ __metadata:
   dependencies:
     map-cache: ^0.2.2
   checksum: f88983f4bf54f9a8847d15e54518535aecbfa9b7f0242604ca5cd027d88ea1469212b5dbb579233e769d0e2f4e6764bc6bbac44731fb78b9964942165c7c3048
+  languageName: node
+  linkType: hard
+
+"front-matter@npm:^4.0.2":
+  version: 4.0.2
+  resolution: "front-matter@npm:4.0.2"
+  dependencies:
+    js-yaml: ^3.13.1
+  checksum: 2447caa3155a00007a4ee5ca8c616f470c9779eab72846b0d6720ac780c4607740060322a85e71f9d93bda7c927ef02903d7778d3043824c9fe2259a476669fb
   languageName: node
   linkType: hard
 
@@ -5541,6 +5571,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"marked@npm:^2.0.3":
+  version: 2.0.3
+  resolution: "marked@npm:2.0.3"
+  bin:
+    marked: bin/marked
+  checksum: 18940065203f4eacf84538d57478cdab170ca024c01e8cb992871f48fedb8a534bb69a908edd5b2c4d0468fb751ed4da52996cda5a45f063e71e433bbb7f04f7
+  languageName: node
+  linkType: hard
+
 "meow@npm:^6.0.0":
   version: 6.1.1
   resolution: "meow@npm:6.1.1"
@@ -6767,6 +6806,24 @@ __metadata:
     mime: ">=2.4.6"
     opener: 1
   checksum: 0d971924b6688b52e0e7e7c1c9d5b72b0076bda98db27720dd6172cb7ce7e0597b68c591eeb1abd23c156c0bf75f45d12443346cfeddac2904607f6f958c764d
+  languageName: node
+  linkType: hard
+
+"rollup-plugin-string@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "rollup-plugin-string@npm:3.0.0"
+  dependencies:
+    rollup-pluginutils: ^2.4.1
+  checksum: 000bd85e22c978d23eac8a30ce1e4471f36413c1c0e93035bcd48e87462951acc3a705f19f5f6a8bbc3187777265d615f0e01b0d08dcce637c4b7f8bf4ff92a8
+  languageName: node
+  linkType: hard
+
+"rollup-pluginutils@npm:^2.4.1":
+  version: 2.8.2
+  resolution: "rollup-pluginutils@npm:2.8.2"
+  dependencies:
+    estree-walker: ^0.6.1
+  checksum: 6922c1a26df033cc3da4650106244fb2211b5ddf72a93be5010cbe51a0817c9abcab08f61cbc3f5fc906b2701df123d8c9b0dae0a34e69dd07218e34e5d357b8
   languageName: node
   linkType: hard
 
