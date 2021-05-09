@@ -35,8 +35,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "reference": "workspace:packages/lodash-from-the-ground-up"
       },
       {
-        "name": "@proftit/rxjs-from-the-group-up",
-        "reference": "workspace:packages/rxjs-from-the-group-up"
+        "name": "@proftit/rxjs-from-the-ground-up",
+        "reference": "workspace:packages/rxjs-from-the-ground-up"
       }
     ],
     "enableTopLevelFallback": true,
@@ -45,7 +45,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ["@proftit/coding-steps-website", ["workspace:packages/coding-steps-website"]],
       ["@proftit/exercism", ["workspace:packages/excercism"]],
       ["@proftit/lodash-from-the-ground-up", ["workspace:packages/lodash-from-the-ground-up"]],
-      ["@proftit/rxjs-from-the-group-up", ["workspace:packages/rxjs-from-the-group-up"]],
+      ["@proftit/rxjs-from-the-ground-up", ["workspace:packages/rxjs-from-the-ground-up"]],
       ["coding-exercises", ["workspace:."]]
     ],
     "fallbackPool": [
@@ -2981,11 +2981,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "SOFT",
         }]
       ]],
-      ["@proftit/rxjs-from-the-group-up", [
-        ["workspace:packages/rxjs-from-the-group-up", {
-          "packageLocation": "./packages/rxjs-from-the-group-up/",
+      ["@proftit/rxjs-from-the-ground-up", [
+        ["workspace:packages/rxjs-from-the-ground-up", {
+          "packageLocation": "./packages/rxjs-from-the-ground-up/",
           "packageDependencies": [
-            ["@proftit/rxjs-from-the-group-up", "workspace:packages/rxjs-from-the-group-up"],
+            ["@proftit/rxjs-from-the-ground-up", "workspace:packages/rxjs-from-the-ground-up"],
             ["@babel/core", "npm:7.14.0"],
             ["@babel/preset-env", "virtual:1a7fe2efa5226f97f43b5fa5d740fd800617515fc0c70d6d4e24ebc7e4ae07d2ed60992b711b4b1bb9c1dc15315f16c4155dd1a014bc7476f23c9d297a5fccd0#npm:7.14.0"],
             ["@babel/preset-typescript", "virtual:1a7fe2efa5226f97f43b5fa5d740fd800617515fc0c70d6d4e24ebc7e4ae07d2ed60992b711b4b1bb9c1dc15315f16c4155dd1a014bc7476f23c9d297a5fccd0#npm:7.13.0"],

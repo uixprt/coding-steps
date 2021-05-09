@@ -1834,9 +1834,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@proftit/rxjs-from-the-group-up@workspace:packages/rxjs-from-the-group-up":
+"@proftit/rxjs-from-the-ground-up@workspace:packages/rxjs-from-the-ground-up":
   version: 0.0.0-use.local
-  resolution: "@proftit/rxjs-from-the-group-up@workspace:packages/rxjs-from-the-group-up"
+  resolution: "@proftit/rxjs-from-the-ground-up@workspace:packages/rxjs-from-the-ground-up"
   dependencies:
     "@babel/core": ^7.14.0
     "@babel/preset-env": ^7.14.0
