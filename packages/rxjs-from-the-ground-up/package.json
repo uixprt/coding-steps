@@ -1,5 +1,5 @@
 {
-  "name": "@proftit/rxjs-from-the-group-up",
+  "name": "@proftit/rxjs-from-the-ground-up",
   "description": "An exploration into rxjs building from scratch",
   "scripts": {
     "build": "rollup -c",

@@ -1,5 +1,5 @@
 ---
-"rxjs-from-start": minor
+"@proftit/rxjs-from-the-ground-up": minor
 ---
 
 Add test for unsubscribe
