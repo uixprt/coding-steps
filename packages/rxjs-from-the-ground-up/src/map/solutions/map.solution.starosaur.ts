@@ -1,21 +1,21 @@
 import { Observable } from "../../types/observable";
 import { createObservable } from "../../create-observable/solutions/create-observable.solution.starosaur";
 
-export function map(transformationFn: (incoming) => any) {
+export function map<T>(transformationFn: (incoming: T) => any) {
   return (source$: Observable) => {
     const newSource$ = createObservable((subscriber) => {
-      const sourceSubscription = source$.subscribe(
-        function next(val) {
+      const sourceSubscription = source$.subscribe({
+        next: (val: T) => {
           const newVal = transformationFn(val);
           subscriber.next(newVal);
         },
-        function error(err) {
+        error: (err: Error) => {
           subscriber.error(err);
         },
-        function complete() {
+        complete: () => {
           subscriber.complete();
-        }
-      );
+        },
+      });
 
       return () => {
         sourceSubscription.unsubscribe();

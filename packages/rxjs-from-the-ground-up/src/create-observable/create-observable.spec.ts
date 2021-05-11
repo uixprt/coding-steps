@@ -12,18 +12,18 @@ function runSpecs(createObservable) {
 
       let results = [];
 
-      numbers$.subscribe(
-        function next(val) {
+      numbers$.subscribe({
+        next: (val) => {
           results = [...results, val];
         },
-        function error(err) {
+        error: (err) => {
           throw err;
         },
-        function complete() {
+        complete: () => {
           expect(results).toEqual([0, 1, 2, 3, 4, 5, 6, 7, 8, 9]);
           done();
-        }
-      );
+        },
+      });
     });
 
     test("Get error notification when observable emit error", (done) => {
@@ -36,14 +36,14 @@ function runSpecs(createObservable) {
         }
       });
 
-      computation$.subscribe(
-        function next(val) {},
-        function error(err) {
+      computation$.subscribe({
+        next: (val) => {},
+        error: (err) => {
           expect(err).toEqual("error in computation");
           done();
         },
-        function complete() {}
-      );
+        complete: () => {},
+      });
     });
 
     test("Get complete notification when observable emit complete", (done) => {
@@ -52,13 +52,13 @@ function runSpecs(createObservable) {
         subscriber.complete();
       });
 
-      computation$.subscribe(
-        function next(val) {},
-        function error(err) {},
-        function complete() {
+      computation$.subscribe({
+        next: (val) => {},
+        error: (err) => {},
+        complete: () => {
           done();
-        }
-      );
+        },
+      });
     });
 
     test("Stop receiving emittion after unsubcribing", (done) => {
@@ -92,8 +92,8 @@ function runSpecs(createObservable) {
 
       let results = [];
 
-      const subscription = numbersAsync$.subscribe(
-        function next(val) {
+      const subscription = numbersAsync$.subscribe({
+        next: (val) => {
           if (val === 3) {
             subscription.unsubscribe();
             return;
@@ -107,14 +107,14 @@ function runSpecs(createObservable) {
 
           results = [...results, val];
         },
-        function error(err) {
+        error: (err) => {
           throw err;
         },
-        function complete() {
+        complete: () => {
           expect(results).toEqual([0, 1, 2]);
           done();
-        }
-      );
+        },
+      });
     });
   });
 }

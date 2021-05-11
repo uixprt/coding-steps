@@ -12,18 +12,16 @@ function runSpecs(pipe: any) {
 
       let results: number[] = [];
 
-      newObs$.subscribe(
-        function next(val: number) {
+      newObs$.subscribe({
+        next: (val: number) => {
           results = [...results, val];
         },
-        function error(err: Error) {
-          done(err);
-        },
-        function complete() {
+        error: (err: Error) => done(err),
+        complete: () => {
           expect(results).toEqual([15, 25, 35, 45]);
           done();
-        }
-      );
+        },
+      });
     });
   });
 }

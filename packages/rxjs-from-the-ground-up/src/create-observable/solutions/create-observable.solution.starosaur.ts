@@ -7,11 +7,9 @@ export function createObservable(
   onSubscribe: (subscriber: Subscriber) => TeardownLogic
 ): Subscription {
   const observable = {
-    subscribe: (next, error, complete) => {
+    subscribe: (subscriberP: Partial<Subscriber>) => {
       const subscriber = {
-        next,
-        error,
-        complete,
+        ...subscriberP,
         closed: false,
       };
 

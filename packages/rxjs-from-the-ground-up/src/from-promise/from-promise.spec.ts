@@ -11,16 +11,16 @@ function runSpecs(fromPromise) {
 
       let result = null;
 
-      hero$.subscribe(
-        function next(val) {
+      hero$.subscribe({
+        next: (val) => {
           result = val;
         },
-        function error() {},
-        function complete() {
+        error: () => {},
+        complete: () => {
           expect(result).toEqual("batman");
           done();
-        }
-      );
+        },
+      });
     });
   });
 }
