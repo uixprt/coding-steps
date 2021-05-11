@@ -8,6 +8,10 @@
     "@changesets/cli": "^2.16.0"
   },
   "devDependencies": {
-    "husky": "^6.0.0"
+    "husky": "^6.0.0",
+    "pinst": "^2.1.6"
+  },
+  "scripts": {
+    "postinstall": "husky install"
   }
 }

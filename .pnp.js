@@ -58,7 +58,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",
           "packageDependencies": [
             ["@changesets/cli", "npm:2.16.0"],
-            ["husky", "npm:6.0.0"]
+            ["husky", "npm:6.0.0"],
+            ["pinst", "npm:2.1.6"]
           ],
           "linkType": "SOFT",
         }]
@@ -4409,7 +4410,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["coding-exercises", "workspace:."],
             ["@changesets/cli", "npm:2.16.0"],
-            ["husky", "npm:6.0.0"]
+            ["husky", "npm:6.0.0"],
+            ["pinst", "npm:2.1.6"]
           ],
           "linkType": "SOFT",
         }]
@@ -5422,6 +5424,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["fragment-cache", "npm:0.2.1"],
             ["map-cache", "npm:0.2.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["fromentries", [
+        ["npm:1.3.2", {
+          "packageLocation": "./.yarn/cache/fromentries-npm-1.3.2-f5392090b8-5cc722e4e3.zip/node_modules/fromentries/",
+          "packageDependencies": [
+            ["fromentries", "npm:1.3.2"]
           ],
           "linkType": "HARD",
         }]
@@ -8148,6 +8159,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/pify-npm-4.0.1-062756097b-786486a8c9.zip/node_modules/pify/",
           "packageDependencies": [
             ["pify", "npm:4.0.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["pinst", [
+        ["npm:2.1.6", {
+          "packageLocation": "./.yarn/cache/pinst-npm-2.1.6-750cbdedeb-ac950620de.zip/node_modules/pinst/",
+          "packageDependencies": [
+            ["pinst", "npm:2.1.6"],
+            ["fromentries", "npm:1.3.2"]
           ],
           "linkType": "HARD",
         }]
