@@ -46,4 +46,3 @@ numberObservable$.subscribe({
 
 - https://rxjs.dev/api/index/class/Observable
 - https://www.learnrxjs.io/learn-rxjs/operators/creation/create
-```
