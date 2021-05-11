@@ -1,0 +1,10 @@
+# Ignore artifacts:
+.git
+.yarn
+.pnp.js
+.yarnrc.yml
+.yarn.lock
+
+build
+dist
+coverage

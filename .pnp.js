@@ -59,7 +59,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@changesets/cli", "npm:2.16.0"],
             ["husky", "npm:6.0.0"],
-            ["pinst", "npm:2.1.6"]
+            ["pinst", "npm:2.1.6"],
+            ["prettier", "npm:2.3.0"]
           ],
           "linkType": "SOFT",
         }]
@@ -4411,7 +4412,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["coding-exercises", "workspace:."],
             ["@changesets/cli", "npm:2.16.0"],
             ["husky", "npm:6.0.0"],
-            ["pinst", "npm:2.1.6"]
+            ["pinst", "npm:2.1.6"],
+            ["prettier", "npm:2.3.0"]
           ],
           "linkType": "SOFT",
         }]
@@ -8229,6 +8231,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/prettier-npm-1.19.1-e56d246fd2-e5fcdfe5e1.zip/node_modules/prettier/",
           "packageDependencies": [
             ["prettier", "npm:1.19.1"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:2.3.0", {
+          "packageLocation": "./.yarn/cache/prettier-npm-2.3.0-29ef37e8b6-652640cc8b.zip/node_modules/prettier/",
+          "packageDependencies": [
+            ["prettier", "npm:2.3.0"]
           ],
           "linkType": "HARD",
         }]
