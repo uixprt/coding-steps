@@ -57,7 +57,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {
           "packageLocation": "./",
           "packageDependencies": [
-            ["@changesets/cli", "npm:2.16.0"]
+            ["@changesets/cli", "npm:2.16.0"],
+            ["husky", "npm:6.0.0"]
           ],
           "linkType": "SOFT",
         }]
@@ -4407,7 +4408,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",
           "packageDependencies": [
             ["coding-exercises", "workspace:."],
-            ["@changesets/cli", "npm:2.16.0"]
+            ["@changesets/cli", "npm:2.16.0"],
+            ["husky", "npm:6.0.0"]
           ],
           "linkType": "SOFT",
         }]
@@ -5892,6 +5894,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["humanize-ms", "npm:1.2.1"],
             ["ms", "npm:2.1.3"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["husky", [
+        ["npm:6.0.0", {
+          "packageLocation": "./.yarn/cache/husky-npm-6.0.0-384872ea98-61e1f7f53f.zip/node_modules/husky/",
+          "packageDependencies": [
+            ["husky", "npm:6.0.0"]
           ],
           "linkType": "HARD",
         }]
