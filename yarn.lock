@@ -1842,6 +1842,8 @@ __metadata:
     "@babel/preset-env": ^7.14.0
     "@babel/preset-typescript": ^7.13.0
     "@rollup/plugin-typescript": ^8.2.1
+    "@tsconfig/recommended": ^1.0.1
+    "@types/jest": ^26.0.23
     babel-jest: ^26.6.3
     jest: ^26.6.3
     rollup: ^2.47.0
@@ -1968,6 +1970,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@tsconfig/recommended@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "@tsconfig/recommended@npm:1.0.1"
+  checksum: 5510ca13427372ca0bea427a18cd70e5e9cab65e6b99bf238613869c447d80db9a05991353db47885e9cfc8a7ce81094d44a1abdff60cf833467187fe8bb863d
+  languageName: node
+  linkType: hard
+
 "@types/babel__core@npm:^7.0.0, @types/babel__core@npm:^7.1.7":
   version: 7.1.14
   resolution: "@types/babel__core@npm:7.1.14"
@@ -2054,6 +2063,16 @@ __metadata:
   dependencies:
     "@types/istanbul-lib-report": "*"
   checksum: 8aee794ea2e8065aa83e0a1017420068d10110f5e67f8473f5751e74462509306c451f79db3856e6848507519bf1d4de7d101daede6539701cc4d74b4646acd9
+  languageName: node
+  linkType: hard
+
+"@types/jest@npm:^26.0.23":
+  version: 26.0.23
+  resolution: "@types/jest@npm:26.0.23"
+  dependencies:
+    jest-diff: ^26.0.0
+    pretty-format: ^26.0.0
+  checksum: a015676b78bdc51be6f6315acef10d9106ea8064e3e49143bca3c75b834b61285b45c5f5ccfd049a80107f1e2869a9183cdb5be85816c073ea8dd05852fafdc6
   languageName: node
   linkType: hard
 
@@ -4956,7 +4975,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jest-diff@npm:^26.6.2":
+"jest-diff@npm:^26.0.0, jest-diff@npm:^26.6.2":
   version: 26.6.2
   resolution: "jest-diff@npm:26.6.2"
   dependencies:
@@ -6619,7 +6638,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"pretty-format@npm:^26.6.2":
+"pretty-format@npm:^26.0.0, pretty-format@npm:^26.6.2":
   version: 26.6.2
   resolution: "pretty-format@npm:26.6.2"
   dependencies:
