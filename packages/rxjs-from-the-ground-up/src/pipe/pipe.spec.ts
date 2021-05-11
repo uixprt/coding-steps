@@ -1,14 +1,14 @@
-import {of} from '../of/solutions/of.solution.starosaur';
-import {map} from '../map/solutions/map.solution.starosaur';
-import {solutions} from './solutions';
+import { of } from "../of/solutions/of.solution.starosaur";
+import { map } from "../map/solutions/map.solution.starosaur";
+import { solutions } from "./solutions";
 
 function runSpecs(pipe) {
-  describe('pipe', () => {
-    test('create one observable from combination of the operators', (done) => {
+  describe("pipe", () => {
+    test("create one observable from combination of the operators", (done) => {
       const newObs$ = pipe(
-        map(num => num * 10),
-        map(num => num + 5),
-      )(of(1,2,3,4));
+        map((num) => num * 10),
+        map((num) => num + 5)
+      )(of(1, 2, 3, 4));
 
       let results = [];
 
@@ -16,7 +16,9 @@ function runSpecs(pipe) {
         function next(val) {
           results = [...results, val];
         },
-        function error(err) { done(err); },
+        function error(err) {
+          done(err);
+        },
         function complete() {
           expect(results).toEqual([15, 25, 35, 45]);
           done();
@@ -26,4 +28,4 @@ function runSpecs(pipe) {
   });
 }
 
-solutions.forEach(pipe => runSpecs(pipe));
+solutions.forEach((pipe) => runSpecs(pipe));

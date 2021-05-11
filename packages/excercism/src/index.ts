@@ -1,10 +1,10 @@
-import marked from 'marked';
-import fm from 'front-matter';
-import gigasecond from './gigasecond/README.md';
+import marked from "marked";
+import fm from "front-matter";
+import gigasecond from "./gigasecond/README.md";
 
-export const exercises = [
-  gigasecond,
-].map(readme => readmeToExerciseInfo(readme));
+export const exercises = [gigasecond].map((readme) =>
+  readmeToExerciseInfo(readme)
+);
 
 function readmeToExerciseInfo(readme) {
   const info = fm(readme);
@@ -13,5 +13,5 @@ function readmeToExerciseInfo(readme) {
   return {
     attributes: info.attributes,
     html,
-  }
+  };
 }

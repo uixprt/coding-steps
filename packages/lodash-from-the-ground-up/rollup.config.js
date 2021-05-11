@@ -1,16 +1,14 @@
-const rollupTypescript = require('@rollup/plugin-typescript');
+const rollupTypescript = require("@rollup/plugin-typescript");
 
 export default {
-  input: 'src/index.ts',
+  input: "src/index.ts",
   output: {
-    file: 'dist/index.js',
-    format: 'cjs'
+    file: "dist/index.js",
+    format: "cjs",
   },
   plugins: [
     rollupTypescript({
-      exclude: [
-        '**/*.spec.ts',
-      ],
+      exclude: ["**/*.spec.ts"],
     }),
-  ]
+  ],
 };

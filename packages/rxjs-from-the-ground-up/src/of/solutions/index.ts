@@ -1,5 +1,3 @@
-import {of as starosaur} from './of.solution.starosaur';
+import { of as starosaur } from "./of.solution.starosaur";
 
-export const solutions = [
-  starosaur,
-];
+export const solutions = [starosaur];

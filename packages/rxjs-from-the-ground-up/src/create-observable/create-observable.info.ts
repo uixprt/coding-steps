@@ -1,3 +1,3 @@
-import {ExerciseInfo} from '../types/exercise-info';
+import { ExerciseInfo } from "../types/exercise-info";
 
-export const createObservableInfo: ExerciseInfo = {}
+export const createObservableInfo: ExerciseInfo = {};

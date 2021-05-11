@@ -4,6 +4,7 @@ description: Create observable helper function
 origin: original
 license: MIT
 ---
+
 # Observable
 
 An entity that can be subscribed/registred/listened on and in return, provide the subscriber data.
@@ -18,7 +19,7 @@ When a subscriber register it self to the observable, the observable start givin
 const numberObservable$ = createNumberObservable();
 
 numberObservable$.subscribe(function next(data) {
-  console.log('incoming data', data);
+  console.log("incoming data", data);
 });
 ```
 

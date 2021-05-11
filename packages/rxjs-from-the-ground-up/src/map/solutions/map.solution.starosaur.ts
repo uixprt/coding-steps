@@ -1,10 +1,9 @@
-import {Observable} from '../../types/observable';
-import {createObservable} from '../../create-observable/solutions/create-observable.solution.starosaur';
+import { Observable } from "../../types/observable";
+import { createObservable } from "../../create-observable/solutions/create-observable.solution.starosaur";
 
 export function map(transformationFn: (incoming) => any) {
   return (source$: Observable) => {
     const newSource$ = createObservable((subscriber) => {
-
       const sourceSubscription = source$.subscribe(
         function next(val) {
           const newVal = transformationFn(val);
@@ -15,12 +14,12 @@ export function map(transformationFn: (incoming) => any) {
         },
         function complete() {
           subscriber.complete();
-        },
+        }
       );
 
       return () => {
         sourceSubscription.unsubscribe();
-      }
+      };
     });
 
     return newSource$;

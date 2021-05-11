@@ -8,6 +8,6 @@ Please support their hard work by going to their site.
 
 ## References
 
-* site - https://exercism.io/
-* license - https://github.com/exercism/typescript/blob/main/LICENSE
-* exercises - https://github.com/exercism/typescript
+- site - https://exercism.io/
+- license - https://github.com/exercism/typescript/blob/main/LICENSE
+- exercises - https://github.com/exercism/typescript

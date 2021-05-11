@@ -1,2 +1,1 @@
-export interface ExerciseInfo {
-}
+export interface ExerciseInfo {}

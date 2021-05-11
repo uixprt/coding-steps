@@ -26,7 +26,7 @@ describe("ResistorColor", () => {
       "blue",
       "violet",
       "grey",
-      "white"
+      "white",
     ]);
   });
 });
