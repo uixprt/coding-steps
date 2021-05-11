@@ -2994,6 +2994,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/preset-env", "virtual:1a7fe2efa5226f97f43b5fa5d740fd800617515fc0c70d6d4e24ebc7e4ae07d2ed60992b711b4b1bb9c1dc15315f16c4155dd1a014bc7476f23c9d297a5fccd0#npm:7.14.0"],
             ["@babel/preset-typescript", "virtual:1a7fe2efa5226f97f43b5fa5d740fd800617515fc0c70d6d4e24ebc7e4ae07d2ed60992b711b4b1bb9c1dc15315f16c4155dd1a014bc7476f23c9d297a5fccd0#npm:7.13.0"],
             ["@rollup/plugin-typescript", "virtual:c5c67be3f7840924e3177cb1caa61de5830b10414fda0e4e81e8d57ef9d4e1afbff91d55e0d9a133aa7d9ff7d64244c28b1faf8a18ce39f11d5b315d7e68adb0#npm:8.2.1"],
+            ["@tsconfig/recommended", "npm:1.0.1"],
+            ["@types/jest", "npm:26.0.23"],
             ["babel-jest", "virtual:caddf51df4928b33a437ca87b8f5ddfb6205ebd6d8231f74d4ee7223f3866e6f815b221aa1e2bd33e98915f701e95bae72a93d2288b49a34a6246bdbc2a4a132#npm:26.6.3"],
             ["jest", "npm:26.6.3"],
             ["rollup", "npm:2.47.0"],
@@ -3216,6 +3218,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["@tsconfig/recommended", [
+        ["npm:1.0.1", {
+          "packageLocation": "./.yarn/cache/@tsconfig-recommended-npm-1.0.1-d9691faba9-5510ca1342.zip/node_modules/@tsconfig/recommended/",
+          "packageDependencies": [
+            ["@tsconfig/recommended", "npm:1.0.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["@types/babel__core", [
         ["npm:7.1.14", {
           "packageLocation": "./.yarn/cache/@types-babel__core-npm-7.1.14-a93ee22530-e0212770e1.zip/node_modules/@types/babel__core/",
@@ -3312,6 +3323,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@types/istanbul-reports", "npm:3.0.0"],
             ["@types/istanbul-lib-report", "npm:3.0.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@types/jest", [
+        ["npm:26.0.23", {
+          "packageLocation": "./.yarn/cache/@types-jest-npm-26.0.23-f0d419e70e-a015676b78.zip/node_modules/@types/jest/",
+          "packageDependencies": [
+            ["@types/jest", "npm:26.0.23"],
+            ["jest-diff", "npm:26.6.2"],
+            ["pretty-format", "npm:26.6.2"]
           ],
           "linkType": "HARD",
         }]

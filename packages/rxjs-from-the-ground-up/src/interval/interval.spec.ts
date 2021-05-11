@@ -7,8 +7,8 @@ function runSpec(interval) {
 
       let results = [];
 
-      const subscription = numbers$.subscribe(
-        function next(val) {
+      const subscription = numbers$.subscribe({
+        next: (val: number) => {
           results = [...results, val];
           if (val === 4) {
             subscription.unsubscribe();
@@ -16,13 +16,13 @@ function runSpec(interval) {
             done();
           }
         },
-        function error(e) {
+        error: (e: Error) => {
           done(e);
         },
-        function complete() {
+        complete: () => {
           done("unexpected complete");
-        }
-      );
+        },
+      });
     });
   });
 }

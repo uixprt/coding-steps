@@ -34,13 +34,10 @@ The subscriber to the observable must provide `next`, `error`, and `complete` me
 ```js
 const numberObservable$ = createNumberObservable();
 
-numberObservable$.subscribe(
-  function next(data) {
-  console.log('incoming data', data);
-}, function error(err) {
-  console.log('an error occured', err);
-}, function complete() {
-  console.log('all data was provided and done. Observation is comlete');
+numberObservable$.subscribe({
+  next: (data) => { console.log('incoming data', data); },
+  error: (err) => { console.log('an error occured', err); },
+  complete: () => { console.log('all data was provided and done. Observation is comlete'); }
 });
 
 ## Reference

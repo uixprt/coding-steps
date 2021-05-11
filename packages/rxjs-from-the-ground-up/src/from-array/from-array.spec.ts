@@ -7,16 +7,16 @@ function runSpecs(fromArray) {
 
       let results = [];
 
-      numbers$.subscribe(
-        function next(val) {
+      numbers$.subscribe({
+        next: (val) => {
           results = [...results, val];
         },
-        function error() {},
-        function complete() {
+        error: () => {},
+        complete: () => {
           expect(results).toEqual([1, 2, 3, 4, 5]);
           done();
-        }
-      );
+        },
+      });
     });
   });
 }

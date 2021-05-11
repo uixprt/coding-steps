@@ -1,3 +1,3 @@
-export function pipe(...fnsList) {
+export function pipe(...fnsList: Function[]) {
   // Logic here
 }

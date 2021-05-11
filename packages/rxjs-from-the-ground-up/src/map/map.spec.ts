@@ -11,16 +11,16 @@ function runSpecs(map) {
       pipe(
         () => numbers$,
         map((num) => num * 10)
-      )(null).subscribe(
-        function next(val) {
+      )(null).subscribe({
+        next: (val: number) => {
           results = [...results, val];
         },
-        function error() {},
-        function complete() {
+        error: (err: Error) => done(err),
+        complete: () => {
           expect(results).toEqual([10, 20, 30, 40, 50]);
           done();
-        }
-      );
+        },
+      });
     });
   });
 }
