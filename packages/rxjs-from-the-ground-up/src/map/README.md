@@ -1,3 +1,10 @@
+---
+title: map
+description: map observable operator
+origin: original
+license: MIT
+---
+
 # map
 
 Take the incoming value from the upstream, apply a custom tranformation on it, and return the new value down the stream.

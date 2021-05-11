@@ -1,3 +1,10 @@
+---
+title: fromArray
+description: fromArray observable generator
+origin: original
+license: MIT
+---
+
 # fromArray 
 
 Create an observable that emit values provided by the array argument.

@@ -1,3 +1,10 @@
+---
+title: fromPromise
+description: fromPromise observable generator
+origin: original
+license: MIT
+---
+
 # fromPromise
 
 Create an observable that emit values provided by the promise argument.

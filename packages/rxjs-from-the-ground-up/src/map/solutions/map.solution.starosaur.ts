@@ -1,5 +1,5 @@
-import {Observable} from '../types/observable';
-import {createObservable} from '../create-observable/create-observable.solution-example';
+import {Observable} from '../../types/observable';
+import {createObservable} from '../../create-observable/solutions/create-observable.solution.starosaur';
 
 export function map(transformationFn: (incoming) => any) {
   return (source$: Observable) => {

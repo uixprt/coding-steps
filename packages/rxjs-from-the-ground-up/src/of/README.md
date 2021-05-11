@@ -1,3 +1,10 @@
+---
+title: of
+description: of observable generator
+origin: original
+license: MIT
+---
+
 # Of - Observable Creator
 
 Create an observable that emit the arguments provided in sequence and then emit complete.

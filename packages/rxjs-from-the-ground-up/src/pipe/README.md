@@ -1,3 +1,10 @@
+---
+title: pipe
+description: pipe functional utility
+origin: original
+license: MIT
+---
+
 # pipe
 
 A utility function to compose together rxjs operators and combine them into one observable.

@@ -1,4 +1,9 @@
-export function createObservable(onSubscribe) {
+import {Subscriber} from '../../types/subscriber';
+import {Subscription} from '../../types/subscription';
+
+export function createObservable(
+  onSubscribe: (subscriber: Subscriber) => any
+): Subscription {
   const observable = {
     subscribe: (next, error, complete) => {
       const subscriber = {

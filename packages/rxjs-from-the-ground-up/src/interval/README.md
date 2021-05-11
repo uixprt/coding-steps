@@ -1,3 +1,10 @@
+---
+title: interval
+description: interval observable generator
+origin: original
+license: MIT
+---
+
 # interval
 
 Create an observable that emit an ever increasing sequential number starting from 0. The observable emit in pulses defined the the provided interval time, .
