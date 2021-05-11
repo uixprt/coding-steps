@@ -12,14 +12,14 @@ A utility function to compose together rxjs operators and combine them into one 
 ## Example
 
 ```js
-import {pipe} from 'rxjs';
-import {filter, map, of, tap} from 'rxjs/operators';
+import { pipe } from "rxjs";
+import { filter, map, of, tap } from "rxjs/operators";
 
 pipe(
   map((num) => num * 10),
-  filter(num => num > 20),
-  tap(num => console.log(num))
-)(of(1,2,3,4));
+  filter((num) => num > 20),
+  tap((num) => console.log(num))
+)(of(1, 2, 3, 4));
 
 // output
 // 30

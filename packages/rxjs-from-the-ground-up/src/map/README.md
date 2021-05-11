@@ -12,17 +12,15 @@ Take the incoming value from the upstream, apply a custom tranformation on it, a
 ## Example
 
 ```js
-import { of } from 'rxjs';
-import { map } from 'rxjs/operators';
+import { of } from "rxjs";
+import { map } from "rxjs/operators";
 
 const numbers$ = of(1, 2, 3, 4, 5);
 
-numbers$.pipe(
-  map((number) => number * 10),
-).subscribe({
+numbers$.pipe(map((number) => number * 10)).subscribe({
   next: (val) => {
-    console.log('next: ', val);
-  }
+    console.log("next: ", val);
+  },
 });
 
 // output:

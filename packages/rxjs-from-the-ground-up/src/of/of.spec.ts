@@ -1,4 +1,4 @@
-import {solutions} from './solutions';
+import { solutions } from "./solutions";
 
 function runSpecs(of) {
   describe("of", () => {
@@ -21,4 +21,4 @@ function runSpecs(of) {
   });
 }
 
-solutions.forEach(of => runSpecs(of));
+solutions.forEach((of) => runSpecs(of));

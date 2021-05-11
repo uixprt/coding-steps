@@ -1,4 +1,4 @@
-import {createObservable} from '../../create-observable/solutions/create-observable.solution.starosaur';
+import { createObservable } from "../../create-observable/solutions/create-observable.solution.starosaur";
 
 export function interval(sliceTime) {
   return createObservable((subscriber) => {

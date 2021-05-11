@@ -5,10 +5,9 @@ Creates an array of elements split into groups the length of size. If array can'
 ## Example
 
 ```js
-_.chunk(['a', 'b', 'c', 'd'], 2);
+_.chunk(["a", "b", "c", "d"], 2);
 // => [['a', 'b'], ['c', 'd']]
- 
-_.chunk(['a', 'b', 'c', 'd'], 3);
+
+_.chunk(["a", "b", "c", "d"], 3);
 // => [['a', 'b', 'c'], ['d']]
 ```
-

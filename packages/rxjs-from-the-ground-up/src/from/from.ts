@@ -1,2 +1,1 @@
-export function from() {
-}
+export function from() {}

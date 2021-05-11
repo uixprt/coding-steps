@@ -1,4 +1,4 @@
-import {createObservableInfo} from './create-observable/create-observable.info';
+import { createObservableInfo } from "./create-observable/create-observable.info";
 
 export const order = [
   createObservableInfo,

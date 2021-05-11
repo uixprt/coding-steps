@@ -1,5 +1,3 @@
-import { fromArray as startosaur } from './from-array.solution.starosaur';
+import { fromArray as startosaur } from "./from-array.solution.starosaur";
 
-export const solutions = [
-  startosaur,
-];
+export const solutions = [startosaur];

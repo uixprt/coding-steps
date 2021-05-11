@@ -1,4 +1,4 @@
-import {solutions} from './solutions';
+import { solutions } from "./solutions";
 
 function runSpecs(createObservable) {
   describe("createObservable", () => {
@@ -96,11 +96,13 @@ function runSpecs(createObservable) {
         function next(val) {
           if (val === 3) {
             subscription.unsubscribe();
-            return
+            return;
           }
 
           if (val > 3) {
-            throw new Error('Was expected to not recive values after unsubscribe');
+            throw new Error(
+              "Was expected to not recive values after unsubscribe"
+            );
           }
 
           results = [...results, val];
@@ -117,4 +119,4 @@ function runSpecs(createObservable) {
   });
 }
 
-solutions.forEach(fn => runSpecs(fn));
+solutions.forEach((fn) => runSpecs(fn));

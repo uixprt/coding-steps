@@ -1,5 +1,3 @@
-import { fromPromise as starosaur} from './from-promise.solution.starosaur';
+import { fromPromise as starosaur } from "./from-promise.solution.starosaur";
 
-export const solutions = [
-  starosaur,
-];
+export const solutions = [starosaur];

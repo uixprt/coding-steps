@@ -1,5 +1,5 @@
-import {Subscriber} from '../../types/subscriber';
-import {Subscription} from '../../types/subscription';
+import { Subscriber } from "../../types/subscriber";
+import { Subscription } from "../../types/subscription";
 
 export function createObservable(
   onSubscribe: (subscriber: Subscriber) => any

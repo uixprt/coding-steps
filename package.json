@@ -6,5 +6,19 @@
   ],
   "dependencies": {
     "@changesets/cli": "^2.16.0"
+  },
+  "devDependencies": {
+    "husky": "^6.0.0",
+    "lint-staged": "^11.0.0",
+    "pinst": "^2.1.6",
+    "prettier": "2.3.0"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  },
+  "scripts": {
+    "postinstall": "husky install",
+    "lint:prettier": "prettier --check .",
+    "lint": "yarn lint:prettier"
   }
 }
