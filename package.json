@@ -20,6 +20,7 @@
     "postinstall": "husky install",
     "lint:prettier": "prettier --check .",
     "lint:changeset": "changeset status --since=main",
-    "lint": "yarn lint:prettier"
+    "lint": "yarn lint:prettier",
+    "changeset:add": "changeset"
   }
 }
