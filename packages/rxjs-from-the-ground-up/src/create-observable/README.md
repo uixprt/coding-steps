@@ -23,6 +23,15 @@ numberObservable$.subscribe(function next(data) {
 });
 ```
 
+```js
+// RxJS v6+
+import { of } from "rxjs";
+const source = of(1, 2, 3, 4, 5);
+
+const subscribe = source.subscribe((val) => console.log(val));
+//output: 1,2,3,4,5
+```
+
 ## Subscriber Interface
 
 The subscriber to the observable must provide `next`, `error`, and `complete` methods so the observable will be able to:
