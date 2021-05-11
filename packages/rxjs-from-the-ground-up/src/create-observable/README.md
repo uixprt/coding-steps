@@ -24,7 +24,6 @@ numberObservable$.subscribe(function next(data) {
 ```
 
 ```js
-// RxJS v6+
 import { of } from "rxjs";
 const source = of(1, 2, 3, 4, 5);
 
