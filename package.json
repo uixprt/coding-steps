@@ -19,6 +19,6 @@
   "scripts": {
     "postinstall": "husky install",
     "lint:prettier": "prettier --check .",
-    "lint": "yarn lint"
+    "lint": "yarn lint:prettier"
   }
 }
