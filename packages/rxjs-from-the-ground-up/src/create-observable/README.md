@@ -11,17 +11,9 @@ An entity that can be subscribed/registred/listened on and in return, provide th
 
 ## Observable Interface
 
-The observable provide a 'subscribe' method to register a listener for its data.
+1. An observable provides a `subscribe` method to register a listener for its data.
 
-When a subscriber register it self to the observable, the observable start giving it it's data.
-
-```js
-const numberObservable$ = createNumberObservable();
-
-numberObservable$.subscribe(function next(data) {
-  console.log("incoming data", data);
-});
-```
+2. When a subscriber register it self to the observable, the observable start giving it it's data.
 
 ```js
 import { of } from "rxjs";
