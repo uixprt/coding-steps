@@ -40,6 +40,8 @@ numberObservable$.subscribe({
   complete: () => { console.log('all data was provided and done. Observation is comlete'); }
 });
 
+```
+
 ## Reference
 
 - https://rxjs.dev/api/index/class/Observable
