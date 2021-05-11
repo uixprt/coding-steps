@@ -1,5 +1,15 @@
 # rxjs-from-start
 
+## 2.0.0
+
+### Major Changes
+
+- cb380f6: update subscriber interface
+
+### Patch Changes
+
+- 6fe99f0: update readme
+
 ## 1.1.0
 
 ### Minor Changes
