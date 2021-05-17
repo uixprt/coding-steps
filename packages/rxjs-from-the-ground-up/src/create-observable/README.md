@@ -19,7 +19,7 @@ An entity that can be subscribed/registred/listened on and in return, provide th
 import { of } from "rxjs";
 const source = of(1, 2, 3, 4, 5);
 
-const subscribe = source.subscribe((val) => console.log(val));
+const subscribe = source.subscribe({ next: (val) => console.log(val) });
 //output: 1,2,3,4,5
 ```
 
