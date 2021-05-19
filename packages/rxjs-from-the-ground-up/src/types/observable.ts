@@ -1,9 +1,6 @@
 import { Subscription } from "./subscription";
+import { Subscriber } from "./subscriber";
 
-export interface Observable<T> {
-  subscribe: (
-    next: (val: T) => void,
-    error: (err: Error) => void,
-    complete: () => void
-  ) => Subscription;
+export interface Observable {
+  subscribe: (Subscriber) => Subscription;
 }
