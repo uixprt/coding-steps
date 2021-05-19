@@ -5,7 +5,7 @@ import { Observable } from "../../types/observable";
 
 export function createObservable(
   onSubscribe: (subscriber: Subscriber) => TeardownLogic
-): Subscription {
+): Observable {
   const observable = {
     subscribe: (subscriberP: Partial<Subscriber>) => {
       const subscriber = {
