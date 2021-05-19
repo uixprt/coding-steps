@@ -15,9 +15,9 @@ An entity that can be subscribed/registred/listened on and in return, provide th
 
 2. When a subscriber register itself to the observable:
 
-    1. the observable start giving it it's data by activating `next(data)`.
+   1. the observable start giving it it's data by activating `next(data)`.
 
-    2. After the observable finish the data, it notify the subscriber by activating `complete()`.
+   2. After the observable finish the data, it notify the subscriber by activating `complete()`.
 
 ```js
 import { of } from "rxjs";
@@ -27,15 +27,15 @@ numbers$.subscribe({ next: (val) => console.log(val) });
 //output: 1,2,3,4,5
 ```
 
-Example of observable: 
+Example of observable:
 
 ```js
-const numbers$ = createObservableFromArray([1,2,3,4]);
+const numbers$ = createObservableFromArray([1, 2, 3, 4]);
 
 function createObservableFromArray(array) {
   return {
     subscribe: (subscriber) => {
-      array.forEach(item => subscriber.next(item));
+      array.forEach((item) => subscriber.next(item));
       subscriber.complete();
     },
   };
@@ -51,7 +51,7 @@ The subscriber to the observable must provide `next`, `error`, and `complete` me
 3. Or that all the data was provided and no more data left - the `complete` method.
 
 ```js
-const numbers$ = createObservableFromArray([1,2,3,4]);
+const numbers$ = createObservableFromArray([1, 2, 3, 4]);
 
 numbers$.subscribe({
   next: (data) => {
@@ -70,12 +70,12 @@ numbers$.subscribe({
 
 The `createObservable` factory utility takes a work function and creates an a simle observable that:
 
-1. When someone subscribe to it, it activate the work function with the subscriber. 
-   
-   The *work function* is responsible to generate/collect the data and transfer it to 
+1. When someone subscribe to it, it activate the work function with the subscriber.
+
+   The _work function_ is responsible to generate/collect the data and transfer it to
    the subscriber - with `next`;
 
-2. When someone subscribe to it, it also returns a `subscription` interface with `unsubscribe` function on it. 
+2. When someone subscribe to it, it also returns a `subscription` interface with `unsubscribe` function on it.
    That function, when activated, stop the observable from emiting anymore data to the subscriber.
 
 ```js
