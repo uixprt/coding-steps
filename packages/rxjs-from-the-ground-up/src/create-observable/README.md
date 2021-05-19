@@ -15,9 +15,9 @@ An entity that can be subscribed/registred/listened on and in return, provide th
 
 2. When a subscriber register itself to the observable:
 
-  1. the observable start giving it it's data by activating `next(data)`.
+    1. the observable start giving it it's data by activating `next(data)`.
 
-  2. After the observable finish the data, it notify the subscriber by activating `complete()`.
+    2. After the observable finish the data, it notify the subscriber by activating `complete()`.
 
 ```js
 import { of } from "rxjs";
