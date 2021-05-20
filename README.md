@@ -4,13 +4,25 @@ A unified monorepo for logic problems in javascript/typescript exercises. This r
 
 ## General Usage
 
-1. Install dependencies with yarn. It does not matter in which directory of the project.
+1. Clone the project
+
+```bash
+git clone git@github.com:Proftit-TC/coding-steps.git
+```
+
+2. Install dependencies with yarn. It does not matter in which directory of the project.
 
 ```bash
 yarn install
 ```
 
-2. Enter the folder of the package and run the test.
+3. One time install the git hooks that run code formating before each commit.
+
+```bash
+yarn husky install
+```
+
+4. Enter the folder of the desired package and run the test.
 
 ```bash
 yarn test
