@@ -35,16 +35,16 @@ numbers$.pipe(map((number) => number * 10)).subscribe({
 
 Operators are just functions that create and return a function only. That function is then used to create the target observable from the source observable and doing some logic between.
 
-Map therefore is actually a factory function - `mapFactory` kind of. 
+Map therefore is actually a factory function - `mapFactory` kind of.
 
-1. It only creates and return a function. 
+1. It only creates and return a function.
 2. That returned function is then used to create a target observable that `maps` over the source observable.
 
 ```js
 const numbersSetA$ = of(1, 2, 3, 4, 5);
 const numbersSetB$ = of(7, 8, 9, 10);
 
-const createObservableOfNumPowerTen = map((x) => x * 10); 
+const createObservableOfNumPowerTen = map((x) => x * 10);
 const numPowerTenA$ = createObservableOfNumPowerTen(numbersSetA$);
 const numPowerTenB$ = createObservableOfNumPowerTen(numbersSetB$);
 
