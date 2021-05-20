@@ -34,6 +34,13 @@ The tests can be run in `watch` mode.
 yarn test:watch
 ```
 
+## Contributing
+
+1. Create a fork.
+2. Make some code changes to the fork.
+3. Add a commit with a new changeset file that describe the change. `yarn changeset`
+4. Create a PR
+
 ## Attributions
 
 Those exercises are taken from several excelent places under several licenses.
