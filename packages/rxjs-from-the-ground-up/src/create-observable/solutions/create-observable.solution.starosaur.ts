@@ -1,6 +1,6 @@
 import { Subscriber } from "../../types/subscriber";
 import { Subscription } from "../../types/subscription";
-import { TeardownLogic } from "../../types/teardown-logic";
+import { TeardownLogic } from "../../types/treadown-logic";
 import { Observable } from "../../types/observable";
 
 export function createObservable(
