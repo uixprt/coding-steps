@@ -41,9 +41,32 @@ yarn test:watch
 3. Add a commit with a new changeset file that describe the change. `yarn changeset`
 4. Create a PR
 
+## Keeping your fork up to date
+
+1. Clone your fork
+2. Add remote from original repository in your forked version:
+
+```bash
+cd into/cloned/fork-repo
+git remote add upstream https://github.com/Proftit-TC/coding-steps.git
+git fetch upstream
+```
+
+3. Update your fork from original repository to keep up with changes
+
+```bash
+git pull upstream main
+```
+
+4. Updated your local repository
+
+```bash
+git push
+```
+
 ## Attributions
 
-Those exercises are taken from several excelent places under several licenses.
+Those exercises are taken from several excellent places under several licenses.
 
 ### Exercism
 
