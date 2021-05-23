@@ -1,13 +1,12 @@
 ---
 name: lodash exercise
 about: Lodash exercise issue template
-title: 'Lodash exercise - '
+title: "Lodash exercise - "
 labels: good first issue, lodash-ftgu
-assignees: ''
-
+assignees: ""
 ---
 
-> 
+>
 
 ## References
 
