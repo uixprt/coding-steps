@@ -1,5 +1,15 @@
 # rxjs-from-start
 
+## 2.1.0
+
+### Minor Changes
+
+- 0e7a55a: Add tap operator
+
+### Patch Changes
+
+- 5a1d548: update docs
+
 ## 2.0.0
 
 ### Major Changes
