@@ -1,5 +1,11 @@
 # rxjs-from-start
 
+## 2.1.1
+
+### Patch Changes
+
+- 27f31fa: Add finalize operator
+
 ## 2.1.0
 
 ### Minor Changes
