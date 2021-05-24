@@ -8,13 +8,14 @@ export function debounceTime(dueTime: number, scheduler: SchedulerLike) {
       let timeoutId: number;
       const sub = source$.subscribe({
         next: (value) => {
-          if (timeoutId) {
+          scheduler.scheduler(value, dueTime);
+          /*if (timeoutId) {
             clearTimeout(timeoutId);
           } else {
             timeoutId = setTimeout(() => {
               subscriber.next(value);
             }, dueTime);
-          }
+          }*/
         },
         error: (err: Error) => {
           subscriber.error(err);
