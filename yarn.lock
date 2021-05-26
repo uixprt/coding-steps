@@ -1779,7 +1779,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@proftit/coding-steps-website@workspace:packages/coding-steps-website"
   dependencies:
-    "@proftit/exercism": ^1.1.0
+    "@proftit/exercism": ^1.1.1
     "@rollup/plugin-commonjs": ^18.1.0
     "@rollup/plugin-html": ^0.2.3
     "@rollup/plugin-node-resolve": ^13.0.0
@@ -1797,7 +1797,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@proftit/exercism@^1.1.0, @proftit/exercism@workspace:packages/excercism":
+"@proftit/exercism@^1.1.1, @proftit/exercism@workspace:packages/excercism":
   version: 0.0.0-use.local
   resolution: "@proftit/exercism@workspace:packages/excercism"
   dependencies:
