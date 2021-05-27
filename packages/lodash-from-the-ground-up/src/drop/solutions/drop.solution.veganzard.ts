@@ -1,6 +1,6 @@
-export function drop(array: [], amountToDrop: number, dir = "left") {
+export function drop(array: [], amountToDrop: number, isRight = false) {
   if (!amountToDrop && amountToDrop !== 0) {
-    if (dir === "right") {
+    if (isRight) {
       return array.slice(0, -1);
     }
     return array.slice(1);
@@ -12,7 +12,5 @@ export function drop(array: [], amountToDrop: number, dir = "left") {
 
   if (amountToDrop === 0) return array;
 
-  return dir === "right"
-    ? array.slice(0, -amountToDrop)
-    : array.slice(amountToDrop);
+  return isRight ? array.slice(0, -amountToDrop) : array.slice(amountToDrop);
 }
