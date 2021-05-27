@@ -15,7 +15,7 @@ function runSpec(drop) {
     });
 
     test("drop the last element of the given array", () => {
-      expect(drop([1, 2, 3, 4, 5], null, "right")).toEqual([1, 2, 3, 4]);
+      expect(drop([1, 2, 3, 4, 5], null, true)).toEqual([1, 2, 3, 4]);
     });
 
     test("drop all elements from the given array", () => {
@@ -23,7 +23,7 @@ function runSpec(drop) {
     });
 
     test("drop the 2 last elements from the given array", () => {
-      expect(drop([1, 2, 3, 4, 5], 2, "right")).toEqual([1, 2, 3]);
+      expect(drop([1, 2, 3, 4, 5], 2, true)).toEqual([1, 2, 3]);
     });
   });
 }

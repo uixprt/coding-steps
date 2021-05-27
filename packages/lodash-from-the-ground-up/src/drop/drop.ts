@@ -1,1 +1,1 @@
-export function drop(array: [], amountToDrop: number, dir = "left") {}
+export function drop(array: [], amountToDrop: number, isRight = false) {}
