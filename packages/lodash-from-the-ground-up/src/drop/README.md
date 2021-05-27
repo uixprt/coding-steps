@@ -3,13 +3,13 @@
 ---
 
 This implementation contains lodash drop and dropRight together.
-If you want dropRight you must pass the string 'right' as third parameter to drop function.
+If you want dropRight you must pass the true (for isRight) as third parameter to drop function.
 
 ```javascript
 // drop
 drop([1, 2, 3, 4, 5], 2);
 // dropRight
-drop([1, 2, 3, 4, 5], 2, "right");
+drop([1, 2, 3, 4, 5], 2, true);
 ```
 
 ---
