@@ -1,7 +1,5 @@
-import { MonoTypeOperatorFunction } from "../types/mono-type-operator-function";
-import { SchedulerLike } from "../types/scheduler-like";
+import { ObservableOperatorOp } from "../types/observable-operator";
 
-export function debounceTime<T>(
-  dueTime: number,
-  scheduler: SchedulerLike
-): MonoTypeOperatorFunction<T> {}
+export function debounceTime<T>(dueTime: number): ObservableOperatorOp<T> {
+  // Logic here
+}
