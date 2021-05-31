@@ -1,5 +1,11 @@
 # rxjs-from-start
 
+## 2.2.0
+
+### Minor Changes
+
+- 187e74b: Add distinctUntilChande operaor
+
 ## 2.1.2
 
 ### Patch Changes
