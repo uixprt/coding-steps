@@ -2,8 +2,9 @@ import { pipe } from "../pipe/solutions/pipe.solution.starosaur";
 import { solutions } from "./solutions";
 import { interval } from "../interval/solutions/interval.solution.starosaur";
 import { of } from "../of/solutions/of.solution.starosaur";
+import { MonoTypeOperatorFunction } from "../types/mono-type-operator-function";
 
-function runSpace(debounceTime) {
+function runSpace(debounceTime: (time: number) => MonoTypeOperatorFunction) {
   describe("debounceTime", () => {
     beforeEach(() => {
       jest.useFakeTimers();
