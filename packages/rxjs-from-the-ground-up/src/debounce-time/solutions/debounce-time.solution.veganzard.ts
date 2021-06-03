@@ -1,7 +1,8 @@
 import { createObservable } from "../../create-observable/solutions/create-observable.solution.starosaur";
 import { Observable } from "../../types/observable";
+import { MonoTypeOperatorFunction } from "../../types/mono-type-operator-function";
 
-export function debounceTime(dueTime: number) {
+export function debounceTime<T>(dueTime: number): (observable) => Observable {
   return (source$: Observable) => {
     return createObservable((subscriber) => {
       let timeoutId: number;

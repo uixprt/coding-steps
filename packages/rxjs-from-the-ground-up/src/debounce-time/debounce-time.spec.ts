@@ -2,9 +2,12 @@ import { pipe } from "../pipe/solutions/pipe.solution.starosaur";
 import { solutions } from "./solutions";
 import { interval } from "../interval/solutions/interval.solution.starosaur";
 import { of } from "../of/solutions/of.solution.starosaur";
-import { MonoTypeOperatorFunction } from "../types/mono-type-operator-function";
+import { createSubject } from "../subject/solutions/subject.solution.veganzard";
+import { Observable } from "../types/observable";
 
-function runSpace(debounceTime: (time: number) => MonoTypeOperatorFunction) {
+function runSpace(
+  debounceTime: (time: number) => (source: Observable) => Observable
+) {
   describe("debounceTime", () => {
     beforeEach(() => {
       jest.useFakeTimers();
@@ -15,22 +18,51 @@ function runSpace(debounceTime: (time: number) => MonoTypeOperatorFunction) {
       jest.useRealTimers();
     });
 
-    jest.useFakeTimers();
-    test("discard emitted values that takes less than the specified time between output", (done) => {
-      const source$ = of(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
-
+    test("emit only one value", (done) => {
+      const subject$ = createSubject();
+      const results = [];
       pipe(
-        () => source$,
-        debounceTime((dueTime: number) => interval(dueTime))
+        () => subject$,
+        debounceTime(500)
       )(null).subscribe({
-        next: (val: number) => val,
+        next: (val: number) => {
+          results.push(val);
+        },
         error: (err: Error) => console.log(err),
         complete: () => {
-          jest.runOnlyPendingTimers();
           expect(setTimeout).toHaveBeenCalledTimes(1);
+          expect(results).toEqual([1]);
           done();
         },
       });
+
+      subject$.next(1);
+      jest.runOnlyPendingTimers();
+      subject$.complete();
+    });
+
+    test("emit 3 values", (done) => {
+      const subject$ = createSubject();
+      const results = [];
+      pipe(
+        () => subject$,
+        debounceTime(500)
+      )(null).subscribe({
+        next: (val: number) => {
+          results.push(val);
+        },
+        error: (err: Error) => console.log(err),
+        complete: () => {
+          expect(results).toEqual([3]);
+          done();
+        },
+      });
+
+      subject$.next(1);
+      subject$.next(2);
+      subject$.next(3);
+      jest.runOnlyPendingTimers();
+      subject$.complete();
     });
   });
 }

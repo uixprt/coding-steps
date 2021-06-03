@@ -1,5 +1,8 @@
-import { ObservableOperatorOp } from "../types/observable-operator";
+import { MonoTypeOperatorFunction } from "../types/mono-type-operator-function";
+import { Observable } from "../types/observable";
 
-export function debounceTime<T>(dueTime: number): ObservableOperatorOp<T> {
+export function debounceTime<T>(
+  dueTime: number
+): (observable: Observable) => Observable {
   // Logic here
 }
