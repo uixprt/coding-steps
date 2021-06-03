@@ -41,27 +41,49 @@ function runSpace(
       subject$.complete();
     });
 
-    test("emit 3 values", (done) => {
+    test(" results in the emission of only the second emission", (done) => {
       const subject$ = createSubject();
       const results = [];
       pipe(
         () => subject$,
-        debounceTime(500)
+        debounceTime(1000)
       )(null).subscribe({
         next: (val: number) => {
           results.push(val);
         },
         error: (err: Error) => console.log(err),
         complete: () => {
-          expect(results).toEqual([3]);
+          expect(results).toEqual([2]);
           done();
         },
       });
 
       subject$.next(1);
       subject$.next(2);
-      subject$.next(3);
       jest.runOnlyPendingTimers();
+      subject$.complete();
+    });
+
+    test("results 2 emissions", (done) => {
+      const subject$ = createSubject();
+      const results = [];
+      pipe(
+        () => subject$,
+        debounceTime(1000)
+      )(null).subscribe({
+        next: (val: number) => {
+          results.push(val);
+        },
+        error: (err: Error) => console.log(err),
+        complete: () => {
+          expect(results).toEqual([1, 2]);
+          done();
+        },
+      });
+
+      subject$.next(1);
+      jest.runOnlyPendingTimers();
+      subject$.next(2);
       subject$.complete();
     });
   });
