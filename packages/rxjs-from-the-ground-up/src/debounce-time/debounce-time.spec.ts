@@ -1,7 +1,5 @@
 import { pipe } from "../pipe/solutions/pipe.solution.starosaur";
 import { solutions } from "./solutions";
-import { interval } from "../interval/solutions/interval.solution.starosaur";
-import { of } from "../of/solutions/of.solution.starosaur";
 import { createSubject } from "../subject/solutions/subject.solution.veganzard";
 import { Observable } from "../types/observable";
 
@@ -30,7 +28,7 @@ function runSpace(
         },
         error: (err: Error) => console.log(err),
         complete: () => {
-          expect(setTimeout).toHaveBeenCalledTimes(1);
+          expect(setTimeout).toHaveBeenCalledTimes(2);
           expect(results).toEqual([1]);
           done();
         },
@@ -38,10 +36,11 @@ function runSpace(
 
       subject$.next(1);
       jest.runOnlyPendingTimers();
+      subject$.next(2);
       subject$.complete();
     });
 
-    test(" results in the emission of only the second emission", (done) => {
+    test("emit only the second value", (done) => {
       const subject$ = createSubject();
       const results = [];
       pipe(
@@ -64,7 +63,7 @@ function runSpace(
       subject$.complete();
     });
 
-    test("results 2 emissions", (done) => {
+    test("results contain 2 emissions", (done) => {
       const subject$ = createSubject();
       const results = [];
       pipe(
@@ -84,6 +83,7 @@ function runSpace(
       subject$.next(1);
       jest.runOnlyPendingTimers();
       subject$.next(2);
+      jest.runOnlyPendingTimers();
       subject$.complete();
     });
   });

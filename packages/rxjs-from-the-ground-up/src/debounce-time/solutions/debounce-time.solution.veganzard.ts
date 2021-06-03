@@ -10,11 +10,10 @@ export function debounceTime<T>(dueTime: number): (observable) => Observable {
         next: (value) => {
           if (timeoutId) {
             clearTimeout(timeoutId);
-          } else {
-            timeoutId = setTimeout(() => {
-              subscriber.next(value);
-            }, dueTime);
           }
+          timeoutId = setTimeout(() => {
+            subscriber.next(value);
+          }, dueTime);
         },
         error: (err: Error) => {
           subscriber.error(err);
