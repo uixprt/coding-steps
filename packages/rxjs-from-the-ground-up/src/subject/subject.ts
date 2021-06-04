@@ -1,3 +1,1 @@
-import { Subscription } from "../types/subscription";
-
-export function subject<T>(): Subscription {}
+export function createSubject<T>() {}

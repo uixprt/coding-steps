@@ -2,7 +2,9 @@ import { createObservable } from "../../create-observable/solutions/create-obser
 import { Observable } from "../../types/observable";
 import { MonoTypeOperatorFunction } from "../../types/mono-type-operator-function";
 
-export function debounceTime<T>(dueTime: number): (observable) => Observable {
+export function debounceTime<T>(
+  dueTime: number
+): (observable: Observable) => Observable {
   return (source$: Observable) => {
     return createObservable((subscriber) => {
       let timeoutId: number;

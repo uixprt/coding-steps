@@ -1,9 +1,9 @@
 import { Subscriber } from "../../types/subscriber";
 
-export function createSubject() {
+export function createSubject<T>() {
   const subscribers = new Map();
   const subject = {
-    next: (val) => {
+    next: (val: any) => {
       subscribers.forEach((subscriber) => {
         subscriber.next(val);
       });
@@ -13,7 +13,7 @@ export function createSubject() {
         subscriber.complete();
       });
     },
-    error: (err) => {
+    error: (err: Error) => {
       subscribers.forEach((subscriber) => {
         subscriber.error(err);
       });

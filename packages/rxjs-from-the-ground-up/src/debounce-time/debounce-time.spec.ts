@@ -18,7 +18,7 @@ function runSpace(
 
     test("emit only one value", (done) => {
       const subject$ = createSubject();
-      const results = [];
+      const results: any[] = [];
       pipe(
         () => subject$,
         debounceTime(500)
@@ -42,7 +42,7 @@ function runSpace(
 
     test("emit only the second value", (done) => {
       const subject$ = createSubject();
-      const results = [];
+      const results: any[] = [];
       pipe(
         () => subject$,
         debounceTime(1000)
@@ -65,7 +65,7 @@ function runSpace(
 
     test("results contain 2 emissions", (done) => {
       const subject$ = createSubject();
-      const results = [];
+      const results: any[] = [];
       pipe(
         () => subject$,
         debounceTime(1000)
