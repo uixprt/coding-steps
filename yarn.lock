@@ -1784,6 +1784,43 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@oozcitak/dom@npm:1.15.8":
+  version: 1.15.8
+  resolution: "@oozcitak/dom@npm:1.15.8"
+  dependencies:
+    "@oozcitak/infra": 1.0.8
+    "@oozcitak/url": 1.0.4
+    "@oozcitak/util": 8.3.8
+  checksum: 935d8b52ed955e7e949f3cd6a9eeeee6e644bbda42b8d324280e62155a8f945670a93d0e0878ac728877ec65736a747b7ed9d2b22c2e1183d67060ff1b358955
+  languageName: node
+  linkType: hard
+
+"@oozcitak/infra@npm:1.0.8":
+  version: 1.0.8
+  resolution: "@oozcitak/infra@npm:1.0.8"
+  dependencies:
+    "@oozcitak/util": 8.3.8
+  checksum: 49858baadd1bd2a5a2bf283b1ce773ee88bc32cf3a3ac6737b2f2e8a62952a9771617f9e6665ce43625dfe226f79f03796920164d21819b16515250cb6ea7fe0
+  languageName: node
+  linkType: hard
+
+"@oozcitak/url@npm:1.0.4":
+  version: 1.0.4
+  resolution: "@oozcitak/url@npm:1.0.4"
+  dependencies:
+    "@oozcitak/infra": 1.0.8
+    "@oozcitak/util": 8.3.8
+  checksum: 639fb2159b02a518bb1cdd70ac92ceb5ca7097b2c7f1588d083efafa74fc57e43ee3afd2ef9c9a53f565788c52cbe5961a0f568de03ce8248129432b2087d0cd
+  languageName: node
+  linkType: hard
+
+"@oozcitak/util@npm:8.3.8":
+  version: 8.3.8
+  resolution: "@oozcitak/util@npm:8.3.8"
+  checksum: 459a7fb55a7a342e63e2fab7e24198af144ddcf6550229140379afc9086ab3dec2e2822eeb5e2add3abb498d85b7718a73ef82e9ac6ceabe50441dec276e1656
+  languageName: node
+  linkType: hard
+
 "@proftit/coding-steps-website@workspace:packages/coding-steps-website":
   version: 0.0.0-use.local
   resolution: "@proftit/coding-steps-website@workspace:packages/coding-steps-website"
@@ -1821,6 +1858,7 @@ __metadata:
     babel-jest: ^26.6.3
     front-matter: ^4.0.2
     jest: ^26.6.3
+    jest-junit: ^12.1.0
     marked: ^2.0.3
     rollup: ^2.47.0
     rollup-plugin-string: ^3.0.0
@@ -1837,6 +1875,7 @@ __metadata:
     "@rollup/plugin-typescript": ^8.2.1
     babel-jest: ^26.6.3
     jest: ^26.6.3
+    jest-junit: ^12.1.0
     rollup: ^2.47.0
     tslib: ^2.2.0
     typescript: ^4.2.4
@@ -1855,6 +1894,7 @@ __metadata:
     "@types/jest": ^26.0.23
     babel-jest: ^26.6.3
     jest: ^26.6.3
+    jest-junit: ^12.1.0
     rollup: ^2.47.0
     tslib: ^2.2.0
     typescript: ^4.2.4
@@ -2519,6 +2559,13 @@ __metadata:
   version: 3.0.0
   resolution: "ansi-regex@npm:3.0.0"
   checksum: 2e3c40d42904366e4a1a7b906ea3ae7968179a50916dfa0fd3e59fd12333c5d95970a9a59067ac3406d97c78784d591f0b841a4efd365dafb261327ae1ea3478
+  languageName: node
+  linkType: hard
+
+"ansi-regex@npm:^4.1.0":
+  version: 4.1.0
+  resolution: "ansi-regex@npm:4.1.0"
+  checksum: 53b6fe447cf92ee59739379de637af6f86b3b8a9537fbfe36a66f946f1d9d34afc3efe664ac31bcc7c3af042d43eabcfcfd3f790316d474bbc7b19a4b1d132dd
   languageName: node
   linkType: hard
 
@@ -3309,6 +3356,7 @@ __metadata:
     "@changesets/cli": ^2.16.0
     "@yarnpkg/pnpify": ^3.0.0-rc.3
     husky: ^6.0.0
+    junit-report-merger: ^2.2.2
     lint-staged: ^11.0.0
     pinst: ^2.1.6
     prettier: 2.3.0
@@ -4156,7 +4204,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fast-glob@npm:^3.1.1, fast-glob@npm:^3.2.2":
+"fast-glob@npm:3.2.5, fast-glob@npm:^3.1.1, fast-glob@npm:^3.2.2":
   version: 3.2.5
   resolution: "fast-glob@npm:3.2.5"
   dependencies:
@@ -5475,6 +5523,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"jest-junit@npm:^12.1.0":
+  version: 12.1.0
+  resolution: "jest-junit@npm:12.1.0"
+  dependencies:
+    mkdirp: ^1.0.4
+    strip-ansi: ^5.2.0
+    uuid: ^3.3.3
+    xml: ^1.0.1
+  checksum: bce72e259dd3723abb637b1f4bffd754269ee3240977849168b8ebf2c59f1f2e20d5c746cb04d05d771ad0236202d301da2f5acd5bede1faf7987ad91be6e321
+  languageName: node
+  linkType: hard
+
 "jest-leak-detector@npm:^26.6.2":
   version: 26.6.2
   resolution: "jest-leak-detector@npm:26.6.2"
@@ -5743,6 +5803,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"js-yaml@npm:3.14.0":
+  version: 3.14.0
+  resolution: "js-yaml@npm:3.14.0"
+  dependencies:
+    argparse: ^1.0.7
+    esprima: ^4.0.0
+  bin:
+    js-yaml: bin/js-yaml.js
+  checksum: 2eb95464e5263aedc20ae2d9280f0e29b00adab15ece080ec42473d7055efaab24b904108644d115f687efe05a5bde02972b883aafa93607c4c108f667a56fa7
+  languageName: node
+  linkType: hard
+
 "js-yaml@npm:^3.10.0, js-yaml@npm:^3.13.0, js-yaml@npm:^3.13.1, js-yaml@npm:^3.6.1":
   version: 3.14.1
   resolution: "js-yaml@npm:3.14.1"
@@ -5899,6 +5971,19 @@ __metadata:
     json-schema: 0.2.3
     verror: 1.10.0
   checksum: ee0177b7ef39e6becf18c586d31fabe15d62be88e7867d3aff86466e4a3de9a2cd47b6e597417aebc1cd3c2d43bc662e79ab5eecdadf3ce0643e909432ed6d2c
+  languageName: node
+  linkType: hard
+
+"junit-report-merger@npm:^2.2.2":
+  version: 2.2.2
+  resolution: "junit-report-merger@npm:2.2.2"
+  dependencies:
+    fast-glob: 3.2.5
+    xmlbuilder2: 2.4.1
+  bin:
+    jrm: cli.js
+    junit-report-merger: cli.js
+  checksum: 7d3b7248a4f790f34a3c8a09d01805c21bbcaab2ed59f0b2166f547db788d8dc1ec41e6070a0e4d14c05e85b4154064556fab5d2c1ba06b8220f0e882b533a85
   languageName: node
   linkType: hard
 
@@ -8299,6 +8384,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"strip-ansi@npm:^5.2.0":
+  version: 5.2.0
+  resolution: "strip-ansi@npm:5.2.0"
+  dependencies:
+    ansi-regex: ^4.1.0
+  checksum: 44a0d0d354f5f7b15f83323879a9112ea746daae7bef0b68238a27626ee757d9a04ce6590433841e14b325e8e7c5d62b8442885e50497e21b7cbca6da40d54ea
+  languageName: node
+  linkType: hard
+
 "strip-ansi@npm:^6.0.0":
   version: 6.0.0
   resolution: "strip-ansi@npm:6.0.0"
@@ -8835,7 +8929,7 @@ typescript@^4.2.4:
   languageName: node
   linkType: hard
 
-"uuid@npm:^3.3.2":
+"uuid@npm:^3.3.2, uuid@npm:^3.3.3":
   version: 3.4.0
   resolution: "uuid@npm:3.4.0"
   bin:
@@ -9086,6 +9180,26 @@ typescript@^4.2.4:
   version: 3.0.0
   resolution: "xml-name-validator@npm:3.0.0"
   checksum: b96679a42e6be36d2433987fe3cc45e972d20d7c2c2a787a2d6b2da94392bd9f23f671cdba29a91211289a2fa8e6965e466dbc1105d0e5730fc3a43e4f1a0688
+  languageName: node
+  linkType: hard
+
+"xml@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "xml@npm:1.0.1"
+  checksum: adde7652a6f6010d28079586e7f608d616138bcb6c44bbc9174292b5cc2fab09b351d6c5f009e9304df2e0030888198225dd2e9ccbf51b776c8928479bfea4cb
+  languageName: node
+  linkType: hard
+
+"xmlbuilder2@npm:2.4.1":
+  version: 2.4.1
+  resolution: "xmlbuilder2@npm:2.4.1"
+  dependencies:
+    "@oozcitak/dom": 1.15.8
+    "@oozcitak/infra": 1.0.8
+    "@oozcitak/util": 8.3.8
+    "@types/node": "*"
+    js-yaml: 3.14.0
+  checksum: 6081e28c920184423e6e3c254e3e84246fbaab3593e9bf39686cba07db053103ffe4ef33832d6105480cc4ead2566c5dcb649ff877c6889bad2f42da88d8ed82
   languageName: node
   linkType: hard
 

@@ -20,5 +20,10 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - run: yarn install --immutable
-      - run: yarn workspaces foreach run test
+      - run: yarn workspaces foreach run test-ci
       - run: yarn lint
+      - run: yarn merge-reports
+      - uses: IgnusG/jest-report-action@v2.3.3
+        if: always() # Or use "continue-on-error: true" in previous test step
+        with:
+          access-token: ${{ secrets.GITHUB_TOKEN }}
