@@ -1,6 +1,6 @@
 {
   "name": "@proftit/lodash-from-the-ground-up",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "A learning project to build from the basic building blocks lodash and ES6 utilities functions",
   "scripts": {
     "build": "rollup -c",

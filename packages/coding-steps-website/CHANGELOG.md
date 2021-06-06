@@ -1,5 +1,13 @@
 # @proftit/coding-steps-website
 
+## 1.1.1
+
+### Patch Changes
+
+- fae3f19: add drop
+- Updated dependencies [fae3f19]
+  - @proftit/exercism@1.1.1
+
 ## 1.1.0
 
 ### Minor Changes
