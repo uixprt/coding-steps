@@ -1,1 +1,1 @@
-export function createSubject<T>() {}
+export function createSubject() {}

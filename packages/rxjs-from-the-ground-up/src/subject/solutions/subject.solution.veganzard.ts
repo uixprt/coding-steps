@@ -1,8 +1,9 @@
 import { Subscriber } from "../../types/subscriber";
+import { ISubject } from "../../types/ISubject";
 
-export function createSubject<T>() {
+export function createSubject(): ISubject {
   const subscribers = new Map();
-  const subject = {
+  const subject: ISubject = {
     next: (val: any) => {
       subscribers.forEach((subscriber) => {
         subscriber.next(val);
