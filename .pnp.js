@@ -3011,6 +3011,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@rollup/plugin-node-resolve", "virtual:1a7fe2efa5226f97f43b5fa5d740fd800617515fc0c70d6d4e24ebc7e4ae07d2ed60992b711b4b1bb9c1dc15315f16c4155dd1a014bc7476f23c9d297a5fccd0#npm:13.0.0"],
             ["@rollup/plugin-replace", "virtual:1a7fe2efa5226f97f43b5fa5d740fd800617515fc0c70d6d4e24ebc7e4ae07d2ed60992b711b4b1bb9c1dc15315f16c4155dd1a014bc7476f23c9d297a5fccd0#npm:2.4.2"],
             ["@rollup/plugin-sucrase", "virtual:1a7fe2efa5226f97f43b5fa5d740fd800617515fc0c70d6d4e24ebc7e4ae07d2ed60992b711b4b1bb9c1dc15315f16c4155dd1a014bc7476f23c9d297a5fccd0#npm:3.1.0"],
+            ["@tsconfig/recommended", "npm:1.0.1"],
+            ["@types/jest", "npm:26.0.23"],
             ["babel-jest", "virtual:caddf51df4928b33a437ca87b8f5ddfb6205ebd6d8231f74d4ee7223f3866e6f815b221aa1e2bd33e98915f701e95bae72a93d2288b49a34a6246bdbc2a4a132#npm:26.6.3"],
             ["front-matter", "npm:4.0.2"],
             ["jest", "npm:26.6.3"],
