@@ -48,14 +48,12 @@ function runSpace(createSubject: Function) {
     const subject$ = createSubject();
 
     subject$.subscribe({
-      complete: () => {
-        expect(mockedComplete.mock.calls.length).toBe(1);
-        done();
-      },
+      complete: mockedComplete,
     });
 
-    mockedComplete();
     subject$.complete();
+    expect(mockedComplete.mock.calls.length).toBe(1);
+    done();
   });
 
   test("subject error", (done) => {
@@ -63,14 +61,12 @@ function runSpace(createSubject: Function) {
     const subject$ = createSubject();
 
     subject$.subscribe({
-      error: () => {
-        expect(mockedError.mock.calls.length).toBe(1);
-        done();
-      },
+      error: mockedError,
     });
 
-    mockedError();
     subject$.error();
+    expect(mockedError.mock.calls.length).toBe(1);
+    done();
   });
 }
 
