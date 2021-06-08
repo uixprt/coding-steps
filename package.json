@@ -10,6 +10,7 @@
   "devDependencies": {
     "@yarnpkg/pnpify": "^3.0.0-rc.3",
     "husky": "^6.0.0",
+    "junit-report-merger": "^2.2.2",
     "lint-staged": "^11.0.0",
     "pinst": "^2.1.6",
     "prettier": "2.3.0"
@@ -21,6 +22,7 @@
     "postinstall": "husky install",
     "lint:prettier": "prettier --check .",
     "lint:changeset": "changeset status --since=main",
+    "merge-reports": "jrm ./junit.xml \"./packages/**/junit.xml\"",
     "lint": "yarn lint:prettier",
     "changeset:add": "changeset"
   }
