@@ -1,4 +1,4 @@
-export function groupBy<T>(
+export function flattenDeep<T>(
   collection: [],
   transformer: string | Function
 ): Record<string, T[]> {

@@ -14,11 +14,8 @@ export function groupBy<T>(
 
   return collection.reduce((acc, item) => {
     const _groupKey = _getGroupKey(item);
-    if (!acc[_groupKey]) {
-      acc[_groupKey] = [];
-    }
 
-    acc[_groupKey].push(item);
+    (acc[_groupKey] || (acc[_groupKey] = [])).push(item);
 
     return acc;
   }, {});
